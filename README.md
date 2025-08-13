@@ -22,22 +22,22 @@ conda env create -f environment.yaml
 
 ## Main
 ### Folder   
-   ```data```: containing DICT dataset for develop GNN model without and with TL, hERG dataset for develop pretrained model for fine-tuning, and example csv file for apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not.     
+   ```data```: containing DICT dataset for develop GNN model without and with TL, hERG dataset for develop pretrained model for fine-tuning, and example csv file for apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not;     
    
    ```trained_models```: the optimal GNN model on DICT;   
 
-   ```trf_learning_models```: the pretrained model based on hERG dataset and the optimal TL_GNN model on DICT;  
+   ```trf_learning_models```: the pretrained model based on hERG dataset and the optimal TL_GNN model on DICT.  
 
 ### Model     
    ```engine.py, model.py, utils.py```  : contain GNN models and helper functions;
    
    ```config.py``` : hyperparameters and constant variables;
    
-   ```Hypers_tuning_and_train_GNN_models.ipynb``` : develop GNN models;
+   ```GNN_models.ipynb``` : Hyperparameter tuning and GNN model development;
    
-   ```Pretrained_TL_models.ipynb```: contains train and validation set for developing GNN models；    
+   ```Pretrained_models.ipynb```: develop pretrained GNN models based on hERG dataset；    
    
-   ```TL_models_under_different_strategies.ipynb``` : develop GNN models;
+   ```TL_models_under_different_strategies.ipynb``` : develop TL_GNN models and evaluate different stategies that affect model performance; the strategies including using different numbers of epochs for pre-training models, reducing learning rates, and appointing different numbers of training epochs before triggering the early stopping mechanism. 
    
    ```Predict.ipynb```: contains train and validation set for developing GNN models；
    
