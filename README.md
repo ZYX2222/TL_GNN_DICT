@@ -37,7 +37,7 @@ conda env create -f environment.yaml
    
    ```Pretrained_models.ipynb```: develop pretrained GNN models based on hERG dataset；    
    
-   ```TL_models_under_different_strategies.ipynb``` : develop TL_GNN models and evaluate different stategies that affect model performance; the strategies including using different numbers of epochs for pre-training models, reducing learning rates, and appointing different numbers of training epochs before triggering the early stopping mechanism. 
+   ```TL_models.ipynb``` : develop TL_GNN models and evaluate different stategies that affect model performance; the strategies including using different numbers of epochs for pre-training models, reducing learning rates, and appointing different numbers of training epochs before triggering the early stopping mechanism. 
    
    ```Predict.ipynb```: apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not；
    
