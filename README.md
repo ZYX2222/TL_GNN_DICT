@@ -22,11 +22,11 @@ conda env create -f environment.yaml
 
 ## Main
 ### Folder   
-   ```data```: hERG dataset with 13818 SMILES and pIC50 values, which is used to develop XGBoost-CECFP model;  
+   ```data```: containing DICT dataset for develop GNN model without and with TL, hERG dataset for develop pretrained model for fine-tuning, and example csv file for apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not.     
    
-   ```trained_models```: hERG dataset with 13890 SMILES, pIC50 values, and two source informantion, which is used to develop XGBoost-CECFP-S model;   
+   ```trained_models```: the optimal GNN model on DICT;   
 
-   ```trf_learning_models```: hERG dataset with 6952 SMILES and pIC50 values from ChEMBL, which is used to develop XGBoost-CECFP-C model;  
+   ```trf_learning_models```: the pretrained model based on hERG dataset and the optimal TL_GNN model on DICT;  
 
 ### Model     
    ```engine.py, model.py, utils.py```  : contain GNN models and helper functions;
