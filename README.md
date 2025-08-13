@@ -22,7 +22,7 @@ conda env create -f environment.yaml
 
 ## Main
 ### Folder   
-   ```data```: containing DICT dataset for develop GNN model without and with TL, hERG dataset for develop pretrained model for fine-tuning, and example csv file for apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not;     
+   ```data```: containing DICT dataset for develop GNN model without and with TL, hERG dataset for develop pretrained model for fine-tuning, and example csv file for apply the optimal TL_GNN model;     
    
    ```trained_models```: the optimal GNN model on DICT;   
 
@@ -39,6 +39,6 @@ conda env create -f environment.yaml
    
    ```TL_models_under_different_strategies.ipynb``` : develop TL_GNN models and evaluate different stategies that affect model performance; the strategies including using different numbers of epochs for pre-training models, reducing learning rates, and appointing different numbers of training epochs before triggering the early stopping mechanism. 
    
-   ```Predict.ipynb```: contains train and validation set for developing GNN models；
+   ```Predict.ipynb```: apply the optimal TL_GNN model to predict whether a given chemical (with SMILES) is cardiotoxic or not；
    
    (Acknowledgments: The code origninated from previous reference: DOI: 10.1021/acs.jcim.3c00554)
